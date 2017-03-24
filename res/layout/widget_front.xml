@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight=".2"
+    android:background="@drawable/rounded_corners"
+    android:minWidth="160dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="गर्भवती"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="जन्म "
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape"
+            android:gravity="center"
+            android:maxEms="1"
+            android:maxLines="2"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="ग्र.भ्र.(लक्ष्य)"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape"
+            android:gravity="center"
+            android:maxEms="1"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="ग्र.भ्र.(प्राप्ति)"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="2"
+            android:background="@drawable/myshape"
+            android:gravity="center"
+            android:maxEms="1"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="अस्वस्थ बच्चे"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:minHeight="22dp"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tvPregY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="25"
+            android:textColor="@color/clrWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDelY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="45"
+            android:textColor="@color/clrWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHVY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="56"
+            android:textColor="@color/clrWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAVY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="78"
+            android:textColor="@color/clrWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSCY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="63"
+            android:textColor="@color/clrWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:minHeight="26dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tvPregM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:textColor="@color/clrDeepGreen"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDelM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="45"
+            android:textColor="@color/clrDeepGreen"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="45"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHVM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="56"
+            android:textColor="@color/clrDeepGreen"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="56"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAVM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="78"
+            android:textColor="@color/clrDeepGreen"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="78"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSCM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myshape1"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/clrDeepGreen"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:shadowColor="@color/backColor1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="63"
+            android:textColor="@color/clrWhite"
+            android:textSize="@dimen/hdrSize1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

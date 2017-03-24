@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7DE" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="10dp"
+                android:text="Type"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="300dp"
+                android:layout_y="10dp" />
+
+            <TextView
+                android:id="@+id/tv_abortation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="60dp"
+                android:text="दिनांक"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/abortation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_x="300dp"
+                android:layout_y="60dp"
+                android:text="DD/MM/YYYY"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/date_abortation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="450dp"
+                android:layout_y="50dp"
+                android:text="Date"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_institution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="110dp"
+                android:text="Institution"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/institution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="300dp"
+                android:layout_y="110dp"
+                android:ems="10"
+                android:hint="Institution"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_abortion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="186dp"
+                android:layout_y="160dp"
+                android:text="Submit"
+                android:textColor="#000000" />
+        </AbsoluteLayout>
+    </HorizontalScrollView>
+
+</ScrollView>

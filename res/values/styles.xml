@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <color name="backColor">#F00</color>
+    <color name="helpColor">#00F</color>
+    <color name="backColor1">#000</color>
+    <color name="clrWhite">#FFF</color>
+    <color name="clrGreen">#92D050</color>
+    <color name="clrOrange">#E26B0A</color>
+    <color name="clrPink">#FF66FF</color>
+    <color name="clrOffwhite">#DDD</color>
+    <color name="clrFooter">#CCC</color>
+    <color name="clrDeepGreen">#0F0</color>
+    <color name="clrYellow">#FF8</color>
+    <color name="clrRed">#F55</color>
+    <color name="clrMGreen">#669900</color>
+  
+  <style name="btnStyleShakespeare" parent="@android:style/Widget.Button">
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:background">@drawable/custom_btn_shakespeare</item>
+       <item name="android:padding">10dip</item>
+   </style>
+</resources>

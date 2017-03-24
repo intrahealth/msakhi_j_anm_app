@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tvRepHead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:background="@drawable/bg_footer"
+                android:text="शिशु रिपोर्ट" />
+
+            <TextView
+                android:id="@+id/mval_entry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="@color/clrGreen"
+                android:gravity="center_horizontal"
+                android:text="मासिक"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/val_entry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center_horizontal"
+                android:text="क्रमिक"
+                android:textColor="@color/clrOrange"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.17"
+            android:background="@color/clrOffwhite"
+            android:choiceMode="singleChoice"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:fillViewport="true"
+            android:listSelector="@drawable/list_selector" />
+    </LinearLayout>

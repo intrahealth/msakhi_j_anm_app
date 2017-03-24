@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+     android:background="#F7F7DE" >
+   <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+
+
+
+<AbsoluteLayout
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+     
+      <RadioGroup
+        android:id="@+id/abortionis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/abortionisy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:onClick="onRadioButtonClicked"
+            android:text="Induced"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/abortionisn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Spontaneous"
+            android:textColor="#000000"  />
+
+        </RadioGroup>
+
+                      
+
+</AbsoluteLayout>
+</HorizontalScrollView>
+</ScrollView>

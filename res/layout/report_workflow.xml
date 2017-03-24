@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/clrOffwhite"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:background="#B85C8A" >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="mसखी: ए.एन.एम"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPregList"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1. गर्भवती सूची"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBirthList"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="2. जन्म सूची"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMDueList"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="3. ड्यू लिस्ट "
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMVisit"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="4. गृह भ्रमण"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnMDeath"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="5. मृत्यु (माँ व शिशु)"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnNewPreg"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="6. नई गर्भवती पंजीकृत महिला "
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/btnnewchild"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_color_effect"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="6. नए बच्चे पंजीकृत"
+                android:textColor="#ffffff"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

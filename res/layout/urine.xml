@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+     android:background="#F7F7DE" >
+   <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+
+
+
+<AbsoluteLayout
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+     <TextView
+          android:id="@+id/tv_albumin"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="10dp"
+        android:text="Albumin"
+        android:textColor="#000000" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <EditText
+          android:id="@+id/albumin"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:layout_x="150dp"
+          android:layout_y="10dp"
+          android:ems="10"
+          android:textColor="#000000" 
+          android:hint="एल्ब्यूमिन" >
+
+                          <requestFocus />
+                      </EditText>
+                      
+      <TextView
+          android:id="@+id/tv_sugar"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="60dp"
+        android:text="मूत्र शुगर"
+        android:textColor="#000000" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <EditText
+                          android:id="@+id/sugar"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                         android:layout_x="150dp"
+                          android:layout_y="60dp"
+                          android:hint="sugar"
+                          android:textColor="#000000" 
+                          android:ems="10" >
+
+                          <requestFocus />
+                      </EditText>
+
+            
+            <Button
+                          android:id="@+id/ok"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_x="50dp"
+                          android:layout_y="110dp"
+                          android:textColor="#000000" 
+                          android:text="Submit" />
+
+</AbsoluteLayout>
+</HorizontalScrollView>
+</ScrollView>

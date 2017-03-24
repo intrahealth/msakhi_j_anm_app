@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+     android:background="#F7F7DE" >
+   <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+
+
+
+<AbsoluteLayout
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+     
+             
+              
+             
+             
+         
+
+         <CheckBox
+             android:id="@+id/opv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="30dp"
+             android:layout_y="10dp"
+             android:textColor="#000000" 
+             android:text="OPV" />
+         
+          <CheckBox
+             android:id="@+id/bcg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_y="10dp"
+             android:layout_x="120dp"
+             android:textColor="#000000" 
+             android:text="BCG" />
+          
+           <CheckBox
+             android:id="@+id/hepatitisb"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_y="60dp"
+             android:layout_x="30dp"
+             android:textColor="#000000" 
+             android:text="Hepatitis B" />
+           
+            <CheckBox
+             android:id="@+id/vitamink"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_y="110dp"
+             android:layout_x="30dp"
+             android:textColor="#000000" 
+             android:text="Vitamin K" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="117dp"
+                android:layout_y="165dp"
+                android:text="Submit" />
+
+</AbsoluteLayout>
+</HorizontalScrollView>
+</ScrollView>

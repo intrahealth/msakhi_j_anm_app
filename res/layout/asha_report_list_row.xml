@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+	    style="@drawable/custom_button_lblue"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/list_selector"
+	    android:orientation="horizontal"
+	    android:paddingBottom="5dp"
+	    android:paddingTop="5dp"
+	    android:weightSum="100" >
+
+   <TextView
+       android:id="@+id/slno"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="15"
+       android:gravity="center"
+       android:paddingRight="5dp"
+       android:text="1"           
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:textStyle="bold"/>
+
+	<TextView
+	    android:id="@+id/name_entry"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="45"
+	    android:text="Anita"           
+        android:textAppearance="?android:attr/textAppearanceLarge"
+       android:textStyle="bold" />
+
+	       <TextView
+	           android:id="@+id/number_entry"
+	           android:layout_width="0dp"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="20"
+	           android:gravity="center"
+	           android:text="23"
+	           android:textColor="@color/clrOrange"           
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+	           />
+	        <TextView
+	           android:id="@+id/number_entry1"
+	           android:layout_width="0dp"
+	           android:layout_height="wrap_content"
+	           android:layout_weight="20"
+	           android:gravity="center"
+	           android:text="23"
+	           android:textColor="@color/clrOrange"           
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+	           />
+ 
+</LinearLayout>	          
+</LinearLayout>

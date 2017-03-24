@@ -1,0 +1,160 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intrahealth.msakhi.appanm"
+    android:versionCode="17"
+    android:versionName="2.3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name="com.intrahealth.appanm.GoogleAnalyticsApp"
+        android:icon="@drawable/msakhi_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name=".MyWidgetProvider" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="MY_WIDGET_CLICK" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity
+            android:name="com.intrahealth.appanm.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Workflow"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.EditPreference"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Asha_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Report_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Home_visits_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Preg_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Creport"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Aboutus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Preg_reg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Vhsnd_preg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Vhsnd_birth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Birth_reg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Report_worklist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.AshaReportlist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Vaccine_due"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Due_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.GuestDonationWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.Report_Registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.intrahealth.appanm.PregnantNew1"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.intrahealth.appanm.SmsService" />
+         // Send Receiver
+        <receiver android:name="org.intrahealth.appanm.SendBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="SMS_SENT" />
+            </intent-filter>
+        </receiver>
+        //Delivery Receiver
+        <receiver android:name="org.intrahealth.appanm.SendBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="SMS_DELIVERED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.intrahealth.appanm.UpdateService" >
+        </service>
+    </application>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    <meta-data
+        android:name="com.google.android.gms.analytics.globalConfigResource"
+        android:resource="@xml/global_tracker" />
+
+</manifest>
